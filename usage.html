@@ -10,7 +10,7 @@
 	<meta name="description" content="Aria2 & YAAW 使用说明" />
 	<style type="text/css">
 		body {
-			font: 12pt 'Hiragino Sans GB','Wenquanyi Micro Hei','Microsoft YaHei',sans-serif;
+			font: 12pt 'Hiragino Sans GB', 'Wenquanyi Micro Hei', 'Microsoft YaHei', sans-serif;
 			font-size: 12pt;
 			color: #000000;
 			margin-bottom: 2em;
@@ -24,8 +24,9 @@
 		b {
 			font-weight: 700;
 		}
-		.code, code {
-			font-family: Monaco,Consolas,monospace;
+		.code,
+		code {
+			font-family: Monaco, Consolas, monospace;
 			font-size: 10pt;
 			background: #F7F7F7;
 		}
@@ -61,7 +62,7 @@
 			<li><b>完整选项说明请参考 <a href="https://aria2.github.io/manual/en/html/aria2c.html" target="_blank">Aria2 Manual</a></b></li>
 			<li><b>参数 <code>--dir</code> <code>--input-file</code> <code>--save-session</code> 根据实际情况修改路径</b></li>
 			<li><b>配置示例, 可根据需要修改各项参数</b>
-			<pre class="code">
+				<pre class="code">
 <span class="sc1">## '#'开头为注释内容, 选项都有相应的注释说明, 根据需要修改 ##
 ## 被注释的选项填写的是默认值, 建议在需要修改时再取消注释  ##
 </span><span class="sc0">
@@ -78,7 +79,6 @@
 #file-allocation=none
 # 断点续传
 </span><span class="sc5">continue</span><span class="sc3">=</span><span class="sc0">true
-
 </span><span class="sc1">## 下载连接相关 ##
 </span><span class="sc0">
 </span><span class="sc1"># 最大同时下载任务数, 运行时可修改, 默认:5
@@ -178,21 +178,6 @@
 </span><span class="sc1"># 保存磁力链接元数据为种子文件(.torrent文件), 默认:false
 </span><span class="sc5">bt-save-metadata</span><span class="sc3">=</span><span class="sc0">true</span>
 </pre>
-			</li>
-		</ul>
-	</div>
-	<h2>Aria2 相关下载</h2>
-	<div class="content">
-		<ul>
-			<li><a href="https://github.com/aria2/aria2/releases/latest" target="_blank">Aria2 源码/程序下载</a></li>
-			<li><a href="archiver/aria2.conf" target="_blank">配置示例下载</a></li>
-			<li><a href="archiver/aria2.zip" target="_blank">Windows 懒人包下载 (包含以下文件)</a>
-				<pre class="code">aria2.conf    <span class="sc1"># 配置文件 可以自己根据说明修改</span>
-aria2.exe     <span class="sc1"># 启动文件 使用这个来启动 aria2</span>
-aria2.session <span class="sc1"># 任务保存文件 未完成任务会保存在这里</span>
-aria2c.exe    <span class="sc1"># 32位命令行主程序</span>
-README.md     <span class="sc1"># README</span>
-Aria2Data     <span class="sc1"># 下载目录 默认下载文件会保存在这里</span></pre>
 			</li>
 		</ul>
 	</div>
