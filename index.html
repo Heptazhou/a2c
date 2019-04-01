@@ -20,15 +20,10 @@
 <html lang="zh-Hans" manifest="offline.appcache">
 	<head>
 		<meta charset="utf-8" />
-		<title>Aria2 Web 控制台</title>
+		<title>Aria2 控制台</title>
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
-		<meta name="author" content="Binux" />
-		<meta name="chinesizing" content="aa65535" />
 		<link href="favicon.ico" rel="shortcut icon" type="image/ico" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="keywords" content="aria2,aria2c,aria2 rpc,aria2 web ui,aria2 web gui,aria2 web界面,yaaw汉化" />
-		<meta name="description" content="Yet Another Aria2 Web Frontend" />
-
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
 		<link href="css/main.css" rel="stylesheet" />
@@ -39,14 +34,13 @@
 	<body>
 		<div class="container">
 			<header class="main-head page-header">
-				<h1>Aria2 Web 控制台</h1>
+				<h1>Aria2 控制台</h1>
 				<span id="offline-cached"></span>
 				<div id="global-info" class="pull-right">
 					<div id="global-version"></div>
 					<div id="global-speed"></div>
 				</div>
 			</header>
-
 			<div class="clearfix hide" id="main-control">
 				<div id="main-alert" class="hide">
 					<div id="main-alert-inline" class="alert">
@@ -54,7 +48,6 @@
 						<span class="alert-msg">加载中</span>
 					</div>
 				</div>
-
 				<div class="pull-left">
 					<div class="btn-group" id="select-btn">
 						<button id="select-all-btn" class="btn" title="全选">
@@ -71,7 +64,6 @@
 						</ul>
 					</div>
 				</div>
-
 				<div class="pull-left" id="not-selected-grp">
 					<div class="pull-left btn-group">
 						<a class="btn" id="add-task-btn" data-toggle="modal" href="#add-task-modal" title="添加任务">
@@ -90,7 +82,6 @@
 						</a>
 					</div>
 				</div>
-
 				<div class="pull-left hide" id="selected-grp">
 					<div class="btn-group">
 						<a href="javascript:;" id="btnUnPause" class="btn" title="开始">
@@ -107,7 +98,6 @@
 						<!--<i class="icon-info-sign"></i> Info-->
 					<!--</button>-->
 				</div>
-
 				<div class="pull-right" id="other-grp">
 					<div class="btn-group">
 						<a href="javascript:;" class="btn" id="refresh-btn" title="刷新">
@@ -119,7 +109,6 @@
 					</div>
 				</div>
 			</div>
-
 			<section id="active-tasks">
 			<div class="section-header">
 				<i class="icon-chevron-down"></i><b>下载中的任务</b>
@@ -132,7 +121,6 @@
 				</li>
 			</ul>
 			</section>
-
 			<section id="other-tasks">
 			<div class="section-header">
 				<i class="icon-chevron-down"></i><b>其他任务</b>
@@ -147,7 +135,6 @@
 			<ul id="stopped-tasks-table" class="tasks-table"> </ul>
 			</section>
 		</div>
-
 		<ul id="task-contextmenu" class="dropdown-menu">
 			<li class="task-restart"><a href="javascript:;" id="menuRestart">重新开始</a></li>
 			<li class="task-start"><a href="javascript:;" id="menuStart">开始</a></li>
@@ -159,7 +146,6 @@
 			<li class="task-move"><a href="javascript:;" id="menuMoveDown">下移</a></li>
 			<li class="task-move"><a href="javascript:;" id="menuMoveEnd">移动到最下面</a></li>
 		</ul>
-
 		<section class="modal hide fade" id="add-task-modal">
 		<div class="modal-header">
 			<button class="close" data-dismiss="modal">×</button>
@@ -185,7 +171,6 @@
 			<a href="javascript:;" id="add-task-clear" class="btn" data-dismiss="modal">取消</a>
 		</div>
 		</section>
-
 		<section class="modal hide fade" id="setting-modal">
 		<div class="modal-header">
 			<button class="close" data-dismiss="modal">×</button>
@@ -206,10 +191,10 @@
 						<label class="control-label">自动刷新</label>
 						<div class="controls">
 							<label class="radio inline">
-								<input type="radio" name="refresh_interval" value="1000"> 1秒
+								<input type="radio" name="refresh_interval" value="1000" checked> 1秒
 							</label>
 							<label class="radio inline">
-								<input type="radio" name="refresh_interval" value="3000" checked> 3秒
+								<input type="radio" name="refresh_interval" value="3000"> 3秒
 							</label>
 							<label class="radio inline">
 								<input type="radio" name="refresh_interval" value="5000"> 5秒
@@ -226,10 +211,10 @@
 						<label class="control-label">完成通知</label>
 						<div class="controls">
 							<label class="radio inline">
-								<input type="radio" name="finish_notification" value="1"> 启用
+								<input type="radio" name="finish_notification" value="1" checked> 启用
 							</label>
 							<label class="radio inline">
-								<input type="radio" name="finish_notification" value="0" checked> 禁用
+								<input type="radio" name="finish_notification" value="0"> 禁用
 							</label>
 						</div>
 					</div>
@@ -248,13 +233,11 @@
 			<a href="javascript:;" class="btn" data-dismiss="modal">取消</a>
 		</div>
 		</section>
-
 		<script id="global-speed-tpl" type="text/mustache-template">
 			<i class="icon-download"></i> <span>{{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}</span>/s
 				/
 			<i class="icon-upload"></i>  <span>{{#_v.format_size}}{{uploadSpeed}}{{/_v.format_size}}</span>/s
 		</script>
-
 		<script id="active-task-tpl" type="text/mustache-template">
 			{{#tasks}}
 			<li class="task" id="task-gid-{{gid}}" data-status="{{status}}" data-gid="{{gid}}">
@@ -294,7 +277,6 @@
 			</li>
 			{{/tasks}}
 		</script>
-
 		<script id="other-task-tpl" type="text/mustache-template">
 			{{#tasks}}
 			<li class="task" id="task-gid-{{gid}}" data-status="{{status}}" data-gid="{{gid}}" data-infohash="{{infoHash}}">
@@ -321,7 +303,6 @@
 			</li>
 			{{/tasks}}
 		</script>
-
 		<script id="info-box-tpl" type="text/mustache-template">
 			<div class="info-box" data-gid="{{gid}}">
 				<div class="tabbable tabs-left">
@@ -345,7 +326,6 @@
 				</div>
 			</div>
 		</script>
-
 		<script id="ib-status-tpl" type="text/mustache-template">
 			<ul>
 				{{#uris}}<li><strong>下载链接: </strong><a target=_blank href="{{.}}">{{.}}</a>{{/uris}}
@@ -360,7 +340,6 @@
 				<li class="bitfield"><strong>文件区块: </strong>{{#_v.bitfield}}{{bitfield}}{{/_v.bitfield}}</li>
 			</ul>
 		</script>
-
 		<script id="file-tpl" type="text/mustache-template">
 			<li>
 				<i class="select-box{{#selected}} icon-ok{{/selected}}" data-index="{{index}}"></i>
@@ -368,7 +347,6 @@
 				<span class="ib-file-size"> {{#_v.format_size}}{{completedLength}}{{/_v.format_size}} / {{#_v.format_size}}{{length}}{{/_v.format_size}} ({{progress}}%)</span>
 			</li>
 		</script>
-
 		<script id="ib-options-tpl" type="text/mustache-template">
 			<form id="ib-options-form" class="form-horizontal" onsubmit="false">
 				<ul>
@@ -381,7 +359,6 @@
 				</ul>
 			</form>
 		</script>
-
 		<script id="ib-peers-tpl" type="text/mustache-template">
 			{{#.}}
 			<tr>
@@ -393,7 +370,6 @@
 			</tr>
 			{{/.}}
 		</script>
-
 		<script id="other-task-empty" type="text/mustache-template">
 			<li>
 				<div class="empty-tasks">
@@ -401,7 +377,6 @@
 				</div>
 			</li>
 		</script>
-
 		<script id="add-task-option-tpl" type="text/mustache-template">
 			<hr />
 			<form id="add-task-option" class="form-horizontal" onsubmit="$('#add-task-uri').submit();return false">
@@ -471,7 +446,6 @@
 				</div>
 			</form>
 		</script>
-
 		<script id="aria2-global-setting-tpl" type="text/mustache-template">
 			<hr />
 			<form id="aria2-gs-form" class="form-horizontal" onsubmit="false">
@@ -500,7 +474,6 @@
 					</div>
 				</div>
 				<div class="clearfix"></div>
-
 				<div class="control-group">
 					<label class="control-label" for="gsi-ua">客户端伪装</label>
 					<div class="controls">
@@ -515,7 +488,6 @@
 				</div>
 			</form>
 		</script>
-
 		<script src="js/jquery-1.7.2.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.jsonrpc.min.js"></script>
