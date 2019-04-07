@@ -463,7 +463,7 @@ if (typeof ARIA2 == "undefined" || !ARIA2) var ARIA2 = (function() {
 							if (finished_tasks_list.indexOf(e.gid) != -1)
 								return;
 							if (ARIA2.finish_notification) {
-								YAAW.notification("Aria2 Web 控制台通知", e.title + " 已完成");
+								YAAW.notification("Aria2 控制台通知", e.title + " 已完成");
 							}
 							finished_tasks_list.push(e.gid);
 						});
@@ -721,7 +721,7 @@ if (typeof ARIA2 == "undefined" || !ARIA2) var ARIA2 = (function() {
 					if (result.uploadSpeed > 0) {
 						title += "↑" + YAAW.tpl.view.format_size_0()(result.uploadSpeed) + "/s ";
 					}
-					title += (title ? "- " : "") + "Aria2 Web 控制台";
+					title += (title ? "- " : "") + "Aria2 控制台";
 					document.title = title;
 				}
 			);
