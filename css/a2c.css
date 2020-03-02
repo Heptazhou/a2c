@@ -14,9 +14,9 @@ html {
 }
 
 body {
-	color: #ffffff;
-	background-color: #000000;
-	font-family: "Noto Mono Local", "Noto CJK Local", "Sarasa Mono Local", Monaco, Menlo, Consolas, sans-serif
+	color: #fff;
+	background-color: #000;
+	font-family: 'Noto Mono Local', 'Noto CJK Local', 'Sarasa Mono Local', Monaco, Menlo, Consolas, sans-serif
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,17 +25,17 @@ h1, h2, h3, h4, h5, h6 {
 
 input, input[disabled], label, textarea, .btn, .btn:hover, .btn-group.open .btn.dropdown-toggle, .dropdown-menu, .dropdown-menu a, .info-open, .input-prepend .add-on, .input-append .add-on, .modal, .modal-footer, .nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav>li>a:hover, .task.selected, .tasks-table>li:hover, #uri-more, #uri-more:hover {
 	text-shadow: none;
-	color: #ffffff;
-	background-color: #333333;
+	color: #fff;
+	background-color: #333;
 	background-image: none
 }
 
 input[disabled], .btn:hover {
-	background-color: #666666
+	background-color: #666
 }
 
 .btn-primary, .btn-success {
-	background-color: #66ccff
+	background-color: #6cf
 }
 
 .btn-primary:hover, .btn-success:hover {
@@ -43,7 +43,7 @@ input[disabled], .btn:hover {
 }
 
 .nav>li>a:hover {
-	color: #0088cc
+	color: #08c
 }
 
 .tab-content {
@@ -51,13 +51,12 @@ input[disabled], .btn:hover {
 }
 
 #ib-files>div.file-list>ul>li>span.ib-file-title {
-	line-height: inherit;
-	white-space: inherit
+	white-space: initial
 }
 
 #uri-more {
 	font-size: 13px;
-	color: #999999
+	color: #999
 }
 
 @font-face {
@@ -67,7 +66,7 @@ input[disabled], .btn:hover {
 
 @font-face {
 	font-family: 'Noto CJK Local';
-	src: local('Noto Sans CJK SC'), local('Source Han Sans SC'), local('Noto Sans CJK TC'), local('Source Han Sans TC'), local('Noto Sans CJK HK'), local('Source Han Sans HK'), local('Noto Sans CJK JP'), local('Source Han Sans JP'), local('Noto Sans CJK KR'), local('Source Han Sans KR'), local('Noto Sans CJK'), local('Source Han Sans')
+	src: local('Noto Sans CJK SC'), local('Source Han Sans SC'), local('Source Han Sans HW SC'), local('Noto Sans CJK TC'), local('Source Han Sans TC'), local('Source Han Sans HW TC'), local('Noto Sans CJK HK'), local('Source Han Sans HK'), local('Source Han Sans HW HK'), local('Noto Sans CJK JP'), local('Source Han Sans JP'), local('Source Han Sans HW JP'), local('Noto Sans CJK KR'), local('Source Han Sans KR'), local('Source Han Sans HW KR'), local('Noto Sans CJK'), local('Source Han Sans'), local('Source Han Sans HW')
 }
 
 @font-face {
