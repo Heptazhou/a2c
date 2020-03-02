@@ -1,3 +1,18 @@
+html {
+	overflow-wrap: break-word;
+	tab-size: 4;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	word-break: break-all;
+	word-wrap: break-word;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased
+}
+
 body {
 	color: #ffffff;
 	background-color: #000000;
@@ -43,4 +58,19 @@ input[disabled], .btn:hover {
 #uri-more {
 	font-size: 13px;
 	color: #999999
+}
+
+@font-face {
+	font-family: 'Noto Mono Local';
+	src: local('Noto Sans Mono'), local('Noto Sans Mono Regular')
+}
+
+@font-face {
+	font-family: 'Noto CJK Local';
+	src: local('Noto Sans CJK SC'), local('Source Han Sans SC'), local('Noto Sans CJK TC'), local('Source Han Sans TC'), local('Noto Sans CJK HK'), local('Source Han Sans HK'), local('Noto Sans CJK JP'), local('Source Han Sans JP'), local('Noto Sans CJK KR'), local('Source Han Sans KR'), local('Noto Sans CJK'), local('Source Han Sans')
+}
+
+@font-face {
+	font-family: 'Sarasa Mono Local';
+	src: local('Sarasa Mono T SC'), local('Sarasa Mono SC'), local('Sarasa Term SC'), local('Sarasa Mono T TC'), local('Sarasa Mono TC'), local('Sarasa Term TC'), local('Sarasa Mono T HC'), local('Sarasa Mono HC'), local('Sarasa Term HC'), local('Sarasa Mono T J'), local('Sarasa Mono J'), local('Sarasa Term J'), local('Sarasa Mono T K'), local('Sarasa Mono K'), local('Sarasa Term K'), local('Sarasa Mono T'), local('Sarasa Mono'), local('Sarasa Term')
 }
