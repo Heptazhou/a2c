@@ -35,7 +35,7 @@ input[disabled], .btn:hover {
 	overflow: inherit
 }
 
-#ib-files li {
+#ib-files>div.file-list>ul>li>span.ib-file-title {
 	line-height: inherit;
 	white-space: inherit
 }
