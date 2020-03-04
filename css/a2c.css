@@ -50,7 +50,7 @@ input[disabled], .btn:hover {
 	overflow: inherit
 }
 
-#ib-files>div.file-list>ul>li>span.ib-file-title {
+#ib-files>div.file-list>ul>li {
 	white-space: initial
 }
 
