@@ -27,7 +27,7 @@ code, input, kbd, li, pre, samp, #copyright, #global-info, #ib-peers {
 	font-family: "Sarasa Mono Local", "Noto CJK Mono Local", "Noto Mono", Monaco, Menlo, Consolas, monospace;
 }
 
-div.left-area>div.task-name>span, h1, h2, h3, h4, h5, h6, strong, th, .section-header {
+div.left-area>div.task-name>span, h1, h2, h3, h4, h5, h6, strong, th {
 	font-weight: normal;
 }
 
