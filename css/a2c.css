@@ -23,11 +23,11 @@ body {
 	font-family: "Inter", "Noto CJK Local", "Sarasa Mono Local", Monaco, Menlo, Consolas, sans-serif;
 }
 
-code, input, kbd, li, pre, samp, #copyright, #global-info {
+code, input, kbd, li, pre, samp, #copyright, #global-info, #ib-peers {
 	font-family: "Sarasa Mono Local", "Noto CJK Mono Local", "Noto Mono", Monaco, Menlo, Consolas, monospace;
 }
 
-div.left-area>div.task-name>span, h1, h2, h3, h4, h5, h6, strong {
+div.left-area>div.task-name>span, h1, h2, h3, h4, h5, h6, strong, th, .section-header {
 	font-weight: normal;
 }
 
