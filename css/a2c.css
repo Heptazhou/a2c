@@ -50,6 +50,10 @@ input[disabled], .btn:hover {
 	background-color: #39c5bb;
 }
 
+.container:after {
+	margin-bottom: 10%;
+}
+
 .nav>li>a:hover {
 	color: #08c;
 }
