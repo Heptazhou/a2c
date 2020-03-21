@@ -93,6 +93,9 @@ input[disabled], .btn:hover {
 		font-size: 110%;
 		padding: 0 0.5rem;
 	}
+	.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+		width: 90%;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -106,6 +109,12 @@ input[disabled], .btn:hover {
 	html {
 		font-size: 115%;
 		padding: 0 0.7rem;
+	}
+	.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+		width: 85%;
+	}
+	#active-tasks .right-area {
+		width: 300px;
 	}
 }
 
@@ -121,6 +130,12 @@ input[disabled], .btn:hover {
 		font-size: 120%;
 		padding: 0 1.1rem;
 	}
+	.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+		width: 80%;
+	}
+	#active-tasks .right-area {
+		width: 320px;
+	}
 }
 
 @media (min-width: 2560px) {
@@ -134,6 +149,9 @@ input[disabled], .btn:hover {
 	html {
 		font-size: 125%;
 		padding: 0 1.3rem;
+	}
+	.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+		width: 75%;
 	}
 }
 
