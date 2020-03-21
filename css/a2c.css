@@ -117,6 +117,9 @@ input[disabled], .btn:hover {
 	.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
 		width: 85%;
 	}
+	#active-tasks .left-area {
+		margin-right: 316px;
+	}
 	#active-tasks .right-area {
 		width: 300px;
 	}
@@ -136,6 +139,9 @@ input[disabled], .btn:hover {
 	}
 	.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
 		width: 80%;
+	}
+	#active-tasks .left-area {
+		margin-right: 336px;
 	}
 	#active-tasks .right-area {
 		width: 320px;
