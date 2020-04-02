@@ -53,20 +53,20 @@ x86_64-w64-mingw32    <span class="sc1"># Windows amd64</span></pre>
 			<li>如果提示 <code>Aria2 RPC 服务器错误</code> 按照以下方法修改
 				<ul style="list-style-type: square">
 					<li><b><code>host</code></b>: 指运行 Aria2 的设备所在的 IP 或者名字</li>
-					<li><b><code>port</code></b>: 使用 <code>--rpc-listen-port</code> 选项设置的端口, 默认为 <code>6800</code></li>
+					<li><b><code>port</code></b>: 使用 <code>--rpc-listen-port</code> 选项设置的端口，默认为 <code>6800</code></li>
 				</ul>
 				<ul style="list-style-type: circle">
 					<li>一般设置为：<code>http://host:port/jsonrpc</code></li>
 					<li>使用 <code>--rpc-secret=xxxxxx</code> 选项时设置为：<code>http://token:xxxxxx@host:port/jsonrpc</code></li>
-					<li>其中 <code>http</code> 可以用 <code>ws</code> 替代, 使用 <code>WebSocket</code> 协议：<code>ws://token:xxxxxx@host:port/jsonrpc</code></li>
+					<li>其中 <code>http</code> 可以用 <code>ws</code> 替代，使用 <code>WebSocket</code> 协议：<code>ws://token:xxxxxx@host:port/jsonrpc</code></li>
 				</ul>
 			</li>
 		</ul>
 		<b>Tips</b>
 		<ul>
-			<li>在 YAAW 中对 Aria2 的设置会在 Aria2 重启后丢失, 必要的设置请写入配置文件（默认路径为：<code>~/.config/aria2/aria2.conf</code>）</li>
-			<li>下载完成的任务会在 Aria2 重启后消失, 除非启用了 <code>--force-save</code> 选项</li>
-			<li>因界面已汉化, 其他不再赘述</li>
+			<li>在 YAAW 中对 Aria2 的设置会在 Aria2 重启后丢失，必要的设置请写入配置文件（默认路径为：<code>~/.config/aria2/aria2.conf</code>）</li>
+			<li>下载完成的任务会在 Aria2 重启后消失，除非启用了 <code>--force-save</code> 选项</li>
+			<li>因界面已汉化，其他不再赘述</li>
 		</ul>
 	</div>
 </body>
