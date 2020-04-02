@@ -66,70 +66,44 @@
 			</div>
 			<div class="pull-left" id="not-selected-grp">
 				<div class="pull-left btn-group">
-					<a class="btn" id="add-task-btn" data-toggle="modal" href="#add-task-modal" title="添加任务">
-							<i class="icon-plus"></i>添加
-						</a>
+					<a class="btn" id="add-task-btn" data-toggle="modal" href="#add-task-modal" title="添加任务"><i class="icon-plus"></i>添加</a>
 				</div>
 				<div class="pull-left btn-group" id="do-all-btn">
-					<a href="javascript:;" id="btnStartAll" class="btn" id="unpause-all" title="开始所有任务">
-							<i class="icon-forward"></i>
-						</a>
-					<a href="javascript:;" id="btnPauseAll" class="btn" id="pause-all" title="暂停所有任务">
-							<i class="icon-stop"></i>
-						</a>
-					<a href="javascript:;" id="btnRemoveFinished" class="btn" id="pure-all" title="删除已经完成或出错的任务">
-							<i class="icon-trash"></i>
-						</a>
+					<a href="javascript:;" id="btnStartAll" class="btn" id="unpause-all" title="开始所有任务"><i class="icon-forward"></i></a>
+					<!-- <a href="javascript:;" id="btnPauseAll" class="btn" id="pause-all" title="暂停所有任务"><i class="icon-stop"></i></a> -->
+					<a href="javascript:;" id="btnRemoveFinished" class="btn" id="pure-all" title="删除已经完成或出错的任务"><i class="icon-trash"></i></a>
 				</div>
 			</div>
 			<div class="pull-left hide" id="selected-grp">
 				<div class="btn-group">
-					<a href="javascript:;" id="btnUnPause" class="btn" title="开始">
-							<i class="icon-play"></i>
-						</a>
-					<a href="javascript:;" id="btnPause" class="btn" title="暂停">
-							<i class="icon-pause"></i>
-						</a>
-					<a href="javascript:;" id="btnRemove" class="btn" title="删除">
-							<i class="icon-remove"></i>
-						</a>
+					<a href="javascript:;" id="btnUnPause" class="btn" title="开始"><i class="icon-play"></i></a>
+					<a href="javascript:;" id="btnPause" class="btn" title="暂停"><i class="icon-pause"></i></a>
+					<a href="javascript:;" id="btnRemove" class="btn" title="删除"><i class="icon-remove"></i></a>
 				</div>
-				<!--<button class="btn pull-left" id="info-btn" title="Task Info">-->
-				<!--<i class="icon-info-sign"></i>Info-->
-				<!--</button>-->
+				<!-- <button class="btn pull-left" id="info-btn" title="Task Info"> -->
+				<!-- <i class="icon-info-sign"></i>Info -->
+				<!-- </button> -->
 			</div>
 			<div class="pull-right" id="other-grp">
 				<div class="btn-group">
-					<a href="javascript:;" class="btn" id="refresh-btn" title="刷新">
-							<i class="icon-refresh"></i>刷新
-						</a>
-					<a class="btn" id="setting-btn" data-toggle="modal" href="#setting-modal" title="设置">
-							<i class="icon-wrench"></i>
-						</a>
+					<a href="javascript:;" class="btn" id="refresh-btn" title="刷新"><i class="icon-refresh"></i>刷新</a>
+					<a class="btn" id="setting-btn" data-toggle="modal" href="#setting-modal" title="设置"><i class="icon-wrench"></i></a>
 				</div>
 			</div>
 		</div>
 		<section id="active-tasks">
-			<div class="section-header">
-				<i class="icon-chevron-down"></i>下载中的任务
-			</div>
+			<div class="section-header"><i class="icon-chevron-down"></i>下载中的任务</div>
 			<ul class="tasks-table" id="active-tasks-table">
 				<li>
-					<div class="empty-tasks">
-						<strong>没有正在下载的任务</strong>
-					</div>
+					<div class="empty-tasks"><strong>没有正在下载的任务</strong></div>
 				</li>
 			</ul>
 		</section>
 		<section id="other-tasks">
-			<div class="section-header">
-				<i class="icon-chevron-down"></i>其他任务
-			</div>
+			<div class="section-header"><i class="icon-chevron-down"></i>其他任务</div>
 			<ul id="waiting-tasks-table" class="tasks-table">
 				<li>
-					<div class="empty-tasks">
-						<strong>没有任务</strong>
-					</div>
+					<div class="empty-tasks"><strong>没有任务</strong></div>
 				</li>
 			</ul>
 			<ul id="stopped-tasks-table" class="tasks-table"></ul>
@@ -182,46 +156,29 @@
 					<div class="control-group rpc-path-group">
 						<label class="control-label" for="rpc-path">JSON-RPC Path</label>
 						<div class="controls">
-							<div class="input-append btn-group rpc-path-wrap">
-								<input type="text" class="input-xlarge" id="rpc-path"><a class="add-on btn dropdown-toggle" href="javascript:;" disabled><b class="caret"></b></a>
-							</div>
+							<div class="input-append btn-group rpc-path-wrap"><input type="text" class="input-xlarge" id="rpc-path"><a class="add-on btn dropdown-toggle" href="javascript:;" disabled><b class="caret"></b></a></div>
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label">自动刷新</label>
 						<div class="controls">
-							<label class="radio inline">
-								<input type="radio" name="refresh_interval" value="1000" checked>1秒
-							</label>
-							<label class="radio inline">
-								<input type="radio" name="refresh_interval" value="3000">3秒
-							</label>
-							<label class="radio inline">
-								<input type="radio" name="refresh_interval" value="5000">5秒
-							</label>
-							<label class="radio inline">
-								<input type="radio" name="refresh_interval" value="10000">10秒
-							</label>
-							<label class="radio inline">
-								<input type="radio" name="refresh_interval" value="0">禁用
-							</label>
+							<label class="radio inline"><input type="radio" name="refresh_interval" value="1000" checked>1秒</label>
+							<label class="radio inline"><input type="radio" name="refresh_interval" value="3000">3秒</label>
+							<label class="radio inline"><input type="radio" name="refresh_interval" value="5000">5秒</label>
+							<label class="radio inline"><input type="radio" name="refresh_interval" value="10000">10秒</label>
+							<label class="radio inline"><input type="radio" name="refresh_interval" value="0">禁用</label>
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label">完成通知</label>
 						<div class="controls">
-							<label class="radio inline">
-								<input type="radio" name="finish_notification" value="1" checked>启用
-							</label>
-							<label class="radio inline">
-								<input type="radio" name="finish_notification" value="0">禁用
-							</label>
+							<label class="radio inline"><input type="radio" name="finish_notification" value="1" checked>启用</label>
+							<label class="radio inline"><input type="radio" name="finish_notification" value="0">禁用</label>
 						</div>
 					</div>
 				</fieldset>
 			</form>
-			<div id="aria2-gsetting">
-			</div>
+			<div id="aria2-gsetting"></div>
 		</div>
 		<div class="modal-footer">
 			<div id="copyright">
@@ -250,9 +207,7 @@
 					<span title="{{title}}">{{title}}</span>
 				</div>
 				<div class="task-info">
-					<span class="task-status" title="{{#_v.status_text}}{{status}}{{/_v.status_text}}{{#_v.error_msg}}{{errorCode}}{{/_v.error_msg}}">
-						<i class="{{#_v.status_icon}}{{status}}{{/_v.status_icon}}"></i>
-					</span>
+					<span class="task-status" title="{{#_v.status_text}}{{status}}{{/_v.status_text}}{{#_v.error_msg}}{{errorCode}}{{/_v.error_msg}}"><i class="{{#_v.status_icon}}{{status}}{{/_v.status_icon}}"></i></span>
 					<span>{{#_v.format_size}}{{completedLength}}{{/_v.format_size}} / {{#_v.format_size}}{{totalLength}}{{/_v.format_size}}</span>
 					{{#uploadLength}}<span>(已上传 {{#_v.format_size}}{{uploadLength}}{{/_v.format_size}})</span>{{/uploadLength}}
 					{{#eta}}<span>剩余时间: {{#_v.format_time}}{{eta}}{{/_v.format_time}}</span>{{/eta}}
@@ -286,9 +241,7 @@
 		{{/tasks}}
 		{{^tasks}}
 		<li>
-			<div class="empty-tasks">
-				<strong>没有正在下载的任务</strong>
-			</div>
+			<div class="empty-tasks"><strong>没有正在下载的任务</strong></div>
 		</li>
 		{{/tasks}}
 	</script>
@@ -330,9 +283,7 @@
 				<div class="tab-content">
 					<div class="tab-pane active" id="ib-status"></div>
 					<div class="tab-pane" id="ib-files">
-						<div id="ib-file-btn">
-							<button id="ib-file-save" class="btn btn-primary">保存</button>
-						</div>
+						<div id="ib-file-btn"><button id="ib-file-save" class="btn btn-primary">保存</button></div>
 						<div class="file-list"></div>
 					</div>
 					<div class="tab-pane" id="ib-options"></div>
@@ -359,9 +310,7 @@
 		<li>
 			<i class="select-box{{#selected}} icon-ok{{/selected}}" data-index="{{index}}"></i>
 			<span class="ib-file-title">{{relative_title}}</span>
-			<span class="ib-file-size">
-				{{#_v.format_size}}{{completedLength}}{{/_v.format_size}} / {{#_v.format_size}}{{length}}{{/_v.format_size}} ({{progress}}%)
-			</span>
+			<span class="ib-file-size">{{#_v.format_size}}{{completedLength}}{{/_v.format_size}} / {{#_v.format_size}}{{length}}{{/_v.format_size}} ({{progress}}%)</span>
 		</li>
 	</script>
 	<script id="ib-options-tpl" type="text/mustache-template">
@@ -372,7 +321,9 @@
 				<li><span>分块数量:</span><input name="split" value="{{split}}" /></li>
 				<li><span>分块大小:</span><input name="min-split-size" value="{{min-split-size}}" /></li>
 				<li><span>最大连接数:</span><input name="max-connection-per-server" value="{{max-connection-per-server}}" /></li>
-				<li id="ib-options-btn"><div><button id="ib-options-save" class="btn btn-primary">保存</button></div></li>
+				<li id="ib-options-btn">
+					<div><button id="ib-options-save" class="btn btn-primary">保存</button></div>
+				</li>
 			</ul>
 		</form>
 	</script>
@@ -389,9 +340,7 @@
 	</script>
 	<script id="other-task-empty" type="text/mustache-template">
 		<li>
-			<div class="empty-tasks">
-				<strong>没有任务</strong>
-			</div>
+			<div class="empty-tasks"><strong>没有任务</strong></div>
 		</li>
 	</script>
 	<script id="add-task-option-tpl" type="text/mustache-template">
@@ -400,66 +349,40 @@
 			<input type="submit" style="position:fixed;top:0;visibility:hidden"/>
 			<div class="control-group">
 				<label class="control-label" for="ati-out">文件名</label>
-				<div class="controls">
-					<input id="ati-out" class="input-xlarge input-clear" name="out" />
-				</div>
+				<div class="controls"><input id="ati-out" class="input-xlarge input-clear" name="out" /></div>
 			</div>
 			<div class="control-group">
 				<label class="control-label" for="ati-dir">保存位置</label>
-				<div class="controls">
-					<input id="ati-dir" class="input-xlarge" name="dir" />
-				</div>
+				<div class="controls"><input id="ati-dir" class="input-xlarge" name="dir" /></div>
 			</div>
 			<div class="clearfix"></div>
 			<div class="control-group half">
-				<div class="controls">
-					<label class="checkbox">
-						<input type="checkbox" name="pause" class="input-save" {{#pause}}checked{{/pause}} />
-						添加后暂停任务
-					</label>
-				</div>
+				<div class="controls"><label class="checkbox"><input type="checkbox" name="pause" class="input-save" {{#pause}}checked{{/pause}} />添加后暂停任务</label></div>
 			</div>
-<!--
-			<div class="control-group half">
-				<div class="controls">
-					<label class="checkbox" title="有规则的下载链接">
-						<input type="checkbox" name="parameterized-uri" class="input-save" {{#parameterized-uri}}checked{{/parameterized-uri}} />
-						参数化链接支持
-					</label>
-				</div>
-			</div>
--->
+			<!-- <div class="control-group half"> -->
+				<!-- <div class="controls"><label class="checkbox" title="有规则的下载链接"><input type="checkbox" name="parameterized-uri" class="input-save" {{#parameterized-uri}}checked{{/parameterized-uri}} />参数化链接支持</label></div> -->
+			<!-- </div> -->
 			<div class="clearfix"></div>
 			<div class="control-group half">
 				<label class="control-label" for="ati-split">分块数量</label>
-				<div class="controls">
-					<input id="ati-split" class="input-small input-save" name="split" value="{{split}}" />
-				</div>
+				<div class="controls"><input id="ati-split" class="input-small input-save" name="split" value="{{split}}" /></div>
 			</div>
 			<div class="control-group half">
 				<label class="control-label" for="ati-cps" title="同一服务器最大连接数">最大连接数</label>
-				<div class="controls">
-					<input id="ati-cps" class="input-small input-save" name="max-connection-per-server" value="{{max-connection-per-server}}" />
-				</div>
+				<div class="controls"><input id="ati-cps" class="input-small input-save" name="max-connection-per-server" value="{{max-connection-per-server}}" /></div>
 			</div>
 			<div class="control-group half">
 				<label class="control-label" for="ati-sr">种子分享率</label>
-				<div class="controls">
-					<input id="ati-sr" class="input-small input-save" name="seed-ratio" value="{{seed-ratio}}" />
-				</div>
+				<div class="controls"><input id="ati-sr" class="input-small input-save" name="seed-ratio" value="{{seed-ratio}}" /></div>
 			</div>
 			<div class="control-group half">
 				<label class="control-label" for="ati-st">做种时间</label>
-				<div class="controls">
-					<input id="ati-st" class="input-small input-save" name="seed-time" value="{{seed-time}}" />
-				</div>
+				<div class="controls"><input id="ati-st" class="input-small input-save" name="seed-time" value="{{seed-time}}" /></div>
 			</div>
 			<div class="clearfix"></div>
 			<div class="control-group">
 				<label class="control-label" for="ati-header">请求头</label>
-				<div class="controls">
-					<textarea id="ati-header" class="input-xlarge input-save" name="header" warp="off" placeholder="HTTP请求头, 作为验证需要, 一般不需要填写">{{header}}</textarea>
-				</div>
+				<div class="controls"><textarea id="ati-header" class="input-xlarge input-save" name="header" warp="off" placeholder="HTTP请求头, 作为验证需要, 一般不需要填写">{{header}}</textarea></div>
 			</div>
 		</form>
 	</script>
@@ -468,40 +391,28 @@
 		<form id="aria2-gs-form" class="form-horizontal" onsubmit="false">
 			<div class="control-group half">
 				<label class="control-label" for="gsi-dl">全局下载限速</label>
-				<div class="controls">
-					<input id="gsi-dl" name="max-overall-download-limit" class="input-small" value="{{#_v.format_size_0}}{{max-overall-download-limit}}{{/_v.format_size_0}}" />
-				</div>
+				<div class="controls"><input id="gsi-dl" name="max-overall-download-limit" class="input-small" value="{{#_v.format_size_0}}{{max-overall-download-limit}}{{/_v.format_size_0}}" /></div>
 			</div>
 			<div class="control-group half">
 				<label class="control-label" for="gsi-ul">全局上传限速</label>
-				<div class="controls">
-					<input id="gsi-ul" name="max-overall-upload-limit" class="input-small" value="{{#_v.format_size_0}}{{max-overall-upload-limit}}{{/_v.format_size_0}}" />
-				</div>
+				<div class="controls"><input id="gsi-ul" name="max-overall-upload-limit" class="input-small" value="{{#_v.format_size_0}}{{max-overall-upload-limit}}{{/_v.format_size_0}}" /></div>
 			</div>
 			<div class="control-group half">
 				<label class="control-label" for="gsi-cd">最多同时任务数</label>
-				<div class="controls">
-					<input id="gsi-cd" name="max-concurrent-downloads" class="input-small" value="{{max-concurrent-downloads}}" />
-				</div>
+				<div class="controls"><input id="gsi-cd" name="max-concurrent-downloads" class="input-small" value="{{max-concurrent-downloads}}" /></div>
 			</div>
 			<div class="control-group half">
 				<label class="control-label" for="gsi-mss">最小分块大小</label>
-				<div class="controls">
-					<input id="gsi-mss" name="min-split-size" class="input-small" value="{{#_v.format_size_0}}{{min-split-size}}{{/_v.format_size_0}}" />
-				</div>
+				<div class="controls"><input id="gsi-mss" name="min-split-size" class="input-small" value="{{#_v.format_size_0}}{{min-split-size}}{{/_v.format_size_0}}" /></div>
 			</div>
 			<div class="clearfix"></div>
 			<div class="control-group">
 				<label class="control-label" for="gsi-ua">用户代理</label>
-				<div class="controls">
-					<input id="gsi-ua" name="user-agent" class="input-xlarge" value="{{user-agent}}" />
-				</div>
+				<div class="controls"><input id="gsi-ua" name="user-agent" class="input-xlarge" value="{{user-agent}}" /></div>
 			</div>
 			<div class="control-group">
 				<label class="control-label" for="gsi-dir">默认下载目录</label>
-				<div class="controls">
-					<input id="gsi-dir" name="dir" class="input-xlarge" value="{{dir}}" disabled />
-				</div>
+				<div class="controls"><input id="gsi-dir" name="dir" class="input-xlarge" value="{{dir}}" disabled /></div>
 			</div>
 		</form>
 	</script>
