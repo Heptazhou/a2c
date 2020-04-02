@@ -228,7 +228,7 @@
 				作者 <a href="https://github.com/binux/yaaw">Binux</a> /
 				汉化 <a href="https://github.com/aa65535/yaaw-zh-hans">aa65535</a> /
 				暗化 <a href="https://github.com/Heptazhou/a2c">Heptazhou</a> /
-				<a href="/usage.html" target="_blank">使用说明</a>
+				<a href="usage.html">使用说明</a>
 			</div>
 			<a href="javascript:;" id="saveSettings" class="btn btn-success">保存</a>
 			<a href="javascript:;" class="btn" data-dismiss="modal">取消</a>
@@ -343,8 +343,8 @@
 	</script>
 	<script id="ib-status-tpl" type="text/mustache-template">
 		<ul>
-			{{#uris}}<li><strong>下载链接: </strong><a href="{{.}}">{{.}}</a>{{/uris}}
-			{{#infoHash}}<li><strong>磁力链接: </strong><a href="magnet:?xt=urn:btih:{{infoHash}}">magnet:?xt=urn:btih:{{infoHash}}</a></li>{{/infoHash}}
+			{{#uris}}<li><strong>下载链接: </strong><a href="{{.}}" rel="noopener" target="_blank">{{.}}</a>{{/uris}}
+			{{#infoHash}}<li><strong>磁力链接: </strong><a href="magnet:?xt=urn:btih:{{infoHash}}" rel="noopener" target="_blank">magnet:?xt=urn:btih:{{infoHash}}</a></li>{{/infoHash}}
 			<li><strong>任务大小: </strong>{{#_v.format_size}}{{totalLength}}{{/_v.format_size}} ({{#_v.format_size}}{{pieceLength}}{{/_v.format_size}} × {{numPieces}})</li>
 			<li><strong>任务状态: </strong>{{#_v.status_text}}{{status}}{{/_v.status_text}}{{#_v.error_msg}}{{errorCode}}{{/_v.error_msg}}</li>
 			<li><strong>保存路径: </strong>{{dir}}</li>
