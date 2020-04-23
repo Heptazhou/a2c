@@ -42,6 +42,10 @@ input[disabled], .btn:hover {
 	background-color: #666;
 }
 
+.btn:focus, :focus {
+	outline: none;
+}
+
 .btn-primary, .btn-success {
 	background-color: #6cf;
 }
@@ -60,10 +64,6 @@ input[disabled], .btn:hover {
 
 .tab-content {
 	overflow: inherit;
-}
-
-:focus {
-	outline: none;
 }
 
 #ib-files>div.file-list>ul>li {
