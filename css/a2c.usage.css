@@ -1,6 +1,6 @@
 body {
-	background: #cccccc;
-	color: #000000;
+	background: #ccc;
+	color: #000;
 	font-family: "Inter", "Noto CJK Local", "Sarasa Mono Local", Monaco, Menlo, Consolas, sans-serif;
 	font-size: 12pt;
 	margin-bottom: 2em;
@@ -34,6 +34,10 @@ code, .code {
 
 .sc1 {
 	color: #008000;
+}
+
+:focus {
+	outline: none;
 }
 
 @media (min-width: 0px) {
@@ -128,11 +132,11 @@ code, .code {
 	font-family: "Inter";
 	font-feature-settings: "calt", "cv03", "cv04", "cv07", "cv08", "cv11", "kern", "liga", "ss03", "tnum", "zero";
 	font-display: swap;
-	src: local("Inter Regular"), url("//src.heptazhou.com/7eeh60w53pz9c92shx1oiieyh/Inter/Inter-Regular.woff2") format("woff2"), url("//src.heptazhou.com/7eeh60w53pz9c92shx1oiieyh/Inter/Inter-Regular.woff") format("woff");
+	src: local("Inter Regular"), url("https://src.heptazhou.com/2r19joeh93wxrsd0jc1ndu07i/Inter/Inter-Regular.woff2") format("woff2"), url("https://src.heptazhou.com/2r19joeh93wxrsd0jc1ndu07i/Inter/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Noto Mono";
 	font-display: swap;
-	src: local("Noto Sans Mono Regular"), url("//src.heptazhou.com/7eeh60w53pz9c92shx1oiieyh/Noto/NotoSansMono-Regular.ttf") format("truetype"), url("//src.heptazhou.com/7eeh60w53pz9c92shx1oiieyh/Noto/NotoSansMono-Regular.otf") format("opentype");
+	src: local("Noto Sans Mono Regular"), url("https://src.heptazhou.com/2r19joeh93wxrsd0jc1ndu07i/Noto/NotoSansMono-Regular.ttf") format("truetype"), url("https://src.heptazhou.com/2r19joeh93wxrsd0jc1ndu07i/Noto/NotoSansMono-Regular.otf") format("opentype");
 }
