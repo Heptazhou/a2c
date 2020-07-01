@@ -9,6 +9,8 @@
 	<meta name="theme-color" content="#000000" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 	<title>Aria2 控制台</title>
+	<link rel="preconnect" href="https://src.heptazhou.com/" crossorigin />
+	<link rel="dns-prefetch" href="https://src.heptazhou.com/" />
 	<link rel="icon" href="favicon.ico" type="image/png" />
 	<!-- Apple -->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -199,7 +201,7 @@
 		<span>{{#_v.format_size}}{{uploadSpeed}}{{/_v.format_size}}</span>/s
 	</script>
 	<script id="active-task-tpl" type="text/mustache-template">
-		{{#tasks}}
+	{{#tasks}}
 		<li class="task" id="task-gid-{{gid}}" data-status="{{status}}" data-gid="{{gid}}">
 			<div class="left-area">
 				<div class="task-name">
@@ -215,38 +217,26 @@
 			</div>
 			<div class="right-area">
 				<div class="progress">
-						<div class="bar" style="width:{{progress}}%;"></div>
-						<div class="bar tex">{{progress}}%</div>
+					<div class="bar" style="width:{{progress}}%;"></div>
+					<div class="bar tex">{{progress}}%</div>
 				</div>
 				<div class="progress-info">
-					{{#downloadSpeed}}<span class="download-speed">
-						<i class="icon-chevron-down"></i>
-						{{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}/s
-					</span>{{/downloadSpeed}}
-					{{#uploadSpeed}}<span class="upload-speed">
-						<i class="icon-chevron-up"></i>
-						{{#_v.format_size}}{{uploadSpeed}}{{/_v.format_size}}/s
-					</span>{{/uploadSpeed}}
-					{{#connections}}<span class="seeders">
-						<i class="icon-signal" title="连接数"></i>
-						{{connections}}
-					</span>{{/connections}}
-					{{#numSeeders}}<span class="seeders">
-						<i class="icon-magnet" title="做种数"></i>
-						{{numSeeders}}
-					</span>{{/numSeeders}}
+					{{#downloadSpeed}}<span class="download-speed"><i class="icon-chevron-down"></i>{{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}/s</span>{{/downloadSpeed}}
+					{{#uploadSpeed}}<span class="upload-speed"><i class="icon-chevron-up"></i>{{#_v.format_size}}{{uploadSpeed}}{{/_v.format_size}}/s</span>{{/uploadSpeed}}
+					{{#connections}}<span class="seeders"><i class="icon-signal" title="连接数"></i>{{connections}}</span>{{/connections}}
+					{{#numSeeders}}<span class="seeders"><i class="icon-magnet" title="做种数"></i>{{numSeeders}}</span>{{/numSeeders}}
 				</div>
 			</div>
 		</li>
-		{{/tasks}}
-		{{^tasks}}
+	{{/tasks}}
+	{{^tasks}}
 		<li>
 			<div class="empty-tasks"><strong>没有正在下载的任务</strong></div>
 		</li>
-		{{/tasks}}
+	{{/tasks}}
 	</script>
 	<script id="other-task-tpl" type="text/mustache-template">
-		{{#tasks}}
+	{{#tasks}}
 		<li class="task" id="task-gid-{{gid}}" data-status="{{status}}" data-gid="{{gid}}" data-infohash="{{infoHash}}">
 			<div class="left-area">
 				<div class="task-name">
@@ -269,7 +259,7 @@
 				<div class="clearfix"></div>
 			</div>
 		</li>
-		{{/tasks}}
+	{{/tasks}}
 	</script>
 	<script id="info-box-tpl" type="text/mustache-template">
 		<div class="info-box" data-gid="{{gid}}">
@@ -328,7 +318,7 @@
 		</form>
 	</script>
 	<script id="ib-peers-tpl" type="text/mustache-template">
-		{{#.}}
+	{{#.}}
 		<tr>
 			<td>{{ip}}:{{port}}</td>
 			<td>{{#_v.format_peerid}}{{peerId}}{{/_v.format_peerid}}</td>
@@ -336,7 +326,7 @@
 			<td>{{#_v.format_size}}{{downloadSpeed}}{{/_v.format_size}}/s</td>
 			<td>{{#_v.format_size}}{{uploadSpeed}}{{/_v.format_size}}/s</td>
 		</tr>
-		{{/.}}
+	{{/.}}
 	</script>
 	<script id="other-task-empty" type="text/mustache-template">
 		<li>
