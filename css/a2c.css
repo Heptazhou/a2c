@@ -191,11 +191,11 @@ input[disabled], .btn:hover {
 	font-family: "Inter";
 	font-feature-settings: "calt", "cv03", "cv04", "cv07", "cv08", "cv11", "kern", "liga", "ss03", "tnum", "zero";
 	font-display: swap;
-	src: local("Inter Regular"), url("https://src.heptazhou.com/2r19joeh93wxrsd0jc1ndu07i/Inter/Inter-Regular.woff2") format("woff2"), url("https://src.heptazhou.com/2r19joeh93wxrsd0jc1ndu07i/Inter/Inter-Regular.woff") format("woff");
+	src: local("Inter"), local("Inter Regular");
 }
 
 @font-face {
 	font-family: "Noto Mono";
 	font-display: swap;
-	src: local("Noto Sans Mono Regular"), url("https://src.heptazhou.com/2r19joeh93wxrsd0jc1ndu07i/Noto/NotoSansMono-Regular.ttf") format("truetype"), url("https://src.heptazhou.com/2r19joeh93wxrsd0jc1ndu07i/Noto/NotoSansMono-Regular.otf") format("opentype");
+	src: local("Noto Sans Mono"), local("Noto Sans Mono Regular");
 }
