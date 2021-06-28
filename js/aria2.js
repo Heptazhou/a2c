@@ -638,7 +638,7 @@ if (typeof ARIA2 == "undefined" || !ARIA2)
 				ARIA2.request("getVersion", [], function (result) {
 					if (!result.result) main_alert("alert-error", "<strong>错误: </strong>RPC 通信错误.", 5000)
 
-					$("#global-version").text("Aria2 " + result.result.version || "")
+					$("#global-version").text("Aria2 v" + result.result.version || "")
 				})
 			},
 
